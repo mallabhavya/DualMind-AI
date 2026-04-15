@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overthinker Bot 🫧</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="top-bar">
+            <div id="streakCounter" title="Use the bot daily to increase your streak!">🔥 0 Days</div>
+            <button id="analyzeBtn">✨ Analyze Me</button>
+        </div>
+        
+        <header class="app-header">
+            <h1>Overthinker Bot 🫧</h1>
+            <p class="subtitle">Spill your worries!</p>
+            
+            <div class="toggle-container">
+                <span class="toggle-label comfort-label active">Comfort 🌸</span>
+                <label class="switch">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label harsh-label">Harsh Truth 🐉</span>
+            </div>
+        </header>
+
+        <main class="chat-container" id="chatBox">
+            <!-- Messages load here -->
+        </main>
+
+        <footer class="input-container">
+            <form id="chatForm">
+                <input type="text" id="userInput" placeholder="I'm worried about..." autocomplete="off" required>
+                <button type="submit" id="sendBtn">✨ Send</button>
+            </form>
+        </footer>
+    </div>
+
+    <!-- API Setup Modal -->
+    <div id="apiModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to Pro Mode! 🌟</h2>
+            <p>To give you real, ChatGPT-level AI responses for <strong>free</strong>, this app uses Google's Gemini AI.</p>
+            <p>1. Go to <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a> and sign in.</p>
+            <p>2. Click "Create API Key" and generate one for free.</p>
+            <p>3. Paste it below to unlock your bot! (It stays safe on your device).</p>
+            <input type="password" id="apiKeyInput" placeholder="AIzaSy...">
+            <button id="saveKeyBtn">Save & Start Overthinking</button>
+            <p id="apiError" style="color:red; font-size:0.8rem; display:none; margin-top:5px;">Please enter a valid key.</p>
+        </div>
+    </div>
+
+    <!-- Analysis Modal -->
+    <div id="analysisModal" class="modal">
+        <div class="modal-content analysis-content">
+            <span class="close-btn" id="closeAnalysis">&times;</span>
+            <h2>Your Overthinking Profile 🧠</h2>
+            <div id="analysisResult">
+                <div class="typing-indicator" style="justify-content: center;"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                <p style="text-align: center; margin-top: 10px;">Analyzing your deepest worries...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
