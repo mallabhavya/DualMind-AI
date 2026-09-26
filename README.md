@@ -1,6 +1,6 @@
-# Overthinker Bot 🫧
+# DualMind - AI  🫧
 
-Overthinker Bot is a web-based AI companion designed to help you process your worries and overthinking. It features two unique modes to cater to your emotional needs: Comfort Mode (🌸) for reassurance and Harsh Truth Mode (🐉) for rational, direct feedback.
+DualMind - AI is a web-based AI companion designed to help you process your worries and overthinking. It features two unique modes to cater to your emotional needs: Comfort Mode (🌸) for reassurance and Harsh Truth Mode (🐉) for rational, direct feedback.
 
 ## Features
 
